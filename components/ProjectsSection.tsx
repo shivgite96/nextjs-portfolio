@@ -25,51 +25,88 @@ export default function ProjectsSection() {
     return () => observer.disconnect();
   }, []);
 
-  const projects = [
-    {
-      id: 1,
-      title: 'Voice Commands using Three.js',
-      description: 'Developed a web-based tool that generates 3D CAD models from voice commands using Three.js, speech recognition APIs, and parametric modeling. Enabled engineers to create CAD designs with faster and more natural interface.',
-      image: 'https://readdy.ai/api/search-image?query=3D%20CAD%20modeling%20interface%20with%20voice%20recognition%20technology%2C%20Three.js%203D%20visualization%2C%20speech%20waveforms%2C%20modern%20web-based%20engineering%20design%20tool%2C%20interactive%203D%20models%2C%20voice%20command%20interface%20with%20technical%20blueprints&width=600&height=400&seq=voice-cad-project&orientation=landscape',
-      technologies: ['Three.js', 'JavaScript', 'Speech Recognition', 'Web APIs', 'CAD Modeling'],
-      category: 'AI/Web Development',
-      status: 'Completed',
-      fullDescription: 'This innovative project combines voice recognition technology with 3D modeling capabilities to revolutionize CAD design workflows. The system processes natural language voice commands and translates them into parametric 3D models using Three.js rendering engine. Key features include real-time voice processing, intelligent command interpretation, and interactive 3D visualization. The tool significantly reduces design time and provides an intuitive interface for engineers to create complex geometries through simple voice instructions.',
-      challenges: 'Managing real-time voice processing accuracy, handling complex geometric transformations, and ensuring cross-browser compatibility.',
-      results: 'Achieved 85% voice recognition accuracy and reduced CAD modeling time by 40% for basic geometric shapes.',
-      githubUrl: 'https://github.com/shivgite96/voice-cad',
-      liveUrl: '#'
-    },
-    {
-      id: 2,
-      title: 'Eco-Friendly Immersion Cooling System Using Castor Oil',
-      description: 'Designed an electronic cooling system using non-conductive processed castor oil. Built electronic component overheating by up to 30% while maintaining an environmentally safe solution.',
-      image: 'https://readdy.ai/api/search-image?query=Eco-friendly%20immersion%20cooling%20system%20with%20castor%20oil%2C%20sustainable%20electronic%20cooling%20solution%2C%20green%20technology%20for%20computer%20cooling%2C%20environmental%20engineering%20design%2C%20liquid%20cooling%20tank%20with%20electronic%20components%20immersed&width=600&height=400&seq=castor-cooling-project&orientation=landscape',
-      technologies: ['Thermal Analysis', 'SolidWorks', 'Environmental Engineering', 'Sustainable Design'],
-      category: 'Thermal Engineering',
-      status: 'Completed',
-      fullDescription: 'This groundbreaking thermal management project explores the use of processed castor oil as an eco-friendly alternative to traditional synthetic cooling fluids. The system features complete immersion cooling for electronic components, utilizing castor oil\'s excellent dielectric properties and thermal conductivity. The design includes custom-fabricated cooling chambers, circulation pumps, and temperature monitoring systems. The project addresses both performance requirements and environmental sustainability concerns in electronic cooling applications.',
-      challenges: 'Processing castor oil to achieve optimal dielectric properties, designing leak-proof immersion chambers, and maintaining consistent thermal performance.',
-      results: 'Achieved 30% reduction in component temperatures, 100% biodegradable cooling solution, and 25% lower operating costs compared to synthetic alternatives.',
-      githubUrl: '#',
-      liveUrl: '#'
-    },
-    {
-      id: 3,
-      title: 'Bamboo Starch Epoxy Composite Material Study',
-      description: 'Conducted comprehensive research using bamboo starch as the matrix and epoxy resin as reinforcement. Achieved a lightweight, high-strength, and biodegradable material suitable for sustainable manufacturing.',
-      image: 'https://readdy.ai/api/search-image?query=Bamboo%20starch%20epoxy%20composite%20materials%20testing%2C%20sustainable%20material%20science%20laboratory%2C%20eco-friendly%20composite%20materials%2C%20bamboo%20fiber%20research%2C%20green%20materials%20engineering%2C%20material%20testing%20equipment&width=600&height=400&seq=bamboo-composite-project&orientation=landscape',
-      technologies: ['Materials Science', 'Composite Analysis', 'Sustainability Research', 'Testing Protocols'],
-      category: 'Materials Research',
-      status: 'Completed',
-      fullDescription: 'This comprehensive materials research project investigates the potential of bamboo starch-epoxy composites as sustainable alternatives to traditional synthetic materials. The study involves extensive testing of mechanical properties, biodegradability, and manufacturing feasibility. Various bamboo starch concentrations and processing methods were evaluated to optimize strength-to-weight ratios. The research includes tensile testing, impact resistance analysis, and environmental degradation studies. The project contributes to the development of eco-friendly materials for automotive and construction applications.',
-      challenges: 'Optimizing bamboo starch processing methods, achieving consistent material properties, and balancing strength with biodegradability.',
-      results: 'Developed a composite material with 40% better strength-to-weight ratio than conventional materials, 60% reduction in carbon footprint, and complete biodegradability within 2 years.',
-      githubUrl: '#',
-      liveUrl: '#'
-    }
-  ];
+ const projects = [
+  {
+    id: 1,
+    title: 'Voice Commands using Three.js',
+    description: 'Web-based tool to create 3D CAD models from voice commands using Three.js and speech recognition.',
+    image: 'https://readdy.ai/api/search-image?query=3D%20CAD%20modeling%20interface%20with%20voice%20recognition%20technology&width=600&height=400&seq=voice-cad-project&orientation=landscape',
+    technologies: ['Three.js', 'JavaScript', 'Speech Recognition', 'Web APIs', 'CAD Modeling'],
+    category: 'AI/Web Development',
+    status: 'Completed',
+    fullDescription: 'This project combines voice recognition with 3D modeling using Three.js for interactive CAD design from natural speech commands.',
+    challenges: 'Real-time voice processing, geometry conversion, browser compatibility.',
+    results: '85% accuracy, 40% faster modeling.',
+    githubUrl: 'https://github.com/shivgite96/voice-cad',
+    liveUrl: '#'
+  },
+  {
+    id: 2,
+    title: 'Eco-Friendly Immersion Cooling System Using Castor Oil',
+    description: 'Used castor oil to cool electronics in a sustainable way, reducing temperatures by 30%.',
+    image: 'https://readdy.ai/api/search-image?query=Eco-friendly%20immersion%20cooling%20system%20with%20castor%20oil&width=600&height=400&seq=castor-cooling-project&orientation=landscape',
+    technologies: ['Thermal Analysis', 'SolidWorks', 'Environmental Engineering'],
+    category: 'Thermal Engineering',
+    status: 'Completed',
+    fullDescription: 'Built a cooling system using biodegradable castor oil to reduce electronics overheating.',
+    challenges: 'Oil processing, leak-proof design.',
+    results: '30% temperature drop, fully biodegradable, 25% cost saving.',
+    githubUrl: '#',
+    liveUrl: '#'
+  },
+  {
+    id: 3,
+    title: 'Bamboo Starch Epoxy Composite Material Study',
+    description: 'Created sustainable composite using bamboo starch and epoxy resin for green engineering.',
+    image: 'https://readdy.ai/api/search-image?query=Bamboo%20starch%20epoxy%20composite%20materials%20testing&width=600&height=400&seq=bamboo-composite-project&orientation=landscape',
+    technologies: ['Materials Science', 'Composite Analysis', 'Testing Protocols'],
+    category: 'Materials Research',
+    status: 'Completed',
+    fullDescription: 'Developed biodegradable composites from bamboo starch and epoxy. Tested strength, weight, and sustainability.',
+    challenges: 'Property consistency, strength vs. biodegradability.',
+    results: '40% better strength-to-weight, 60% lower carbon footprint.',
+    githubUrl: '#',
+    liveUrl: '#'
+  },
+  {
+    id: 4,
+    title: 'Design Projects',
+    description: 'Explore my CAD and product design work including mechanical assemblies and technical drawings.',
+    image: 'https://readdy.ai/api/search-image?query=CAD%20design%20projects%20gallery%2C%20solidworks%20assemblies%2C%20mechanical%20engineering%20designs&width=600&height=400&seq=design-projects&orientation=landscape',
+    technologies: ['SolidWorks', 'AutoCAD', 'Fusion 360'],
+    category: 'Design',
+    status: 'Ongoing',
+    fullDescription: 'This project includes several mechanical designs such as gear assemblies, chassis frames, and other 2D/3D engineering models.',
+    challenges: 'Parametric accuracy, design constraints, manufacturing feasibility.',
+    results: 'Efficient, optimized CAD models ready for prototyping.',
+    githubUrl: '#',
+    liveUrl: '#',
+    viewProjects: [
+      { name: 'Gear Assembly', image: 'link-to-your-gear-image.png' },
+      { name: 'Chassis Frame', image: 'link-to-your-chassis-image.png' }
+    ]
+  },
+  {
+    id: 5,
+    title: 'Data Analytics Projects',
+    description: 'A collection of interactive dashboards and data visualizations using Power BI and Tableau.',
+    image: 'https://readdy.ai/api/search-image?query=Power%20BI%20dashboard%20project%20example%2C%20data%20analytics%20and%20visualization%20interface&width=600&height=400&seq=data-analytics&orientation=landscape',
+    technologies: ['Power BI', 'Tableau', 'Excel'],
+    category: 'Data & Analytics',
+    status: 'Completed',
+    fullDescription: 'Includes projects like sales forecasting, time series analysis, and performance monitoring dashboards built using Power BI and Tableau.',
+    challenges: 'Data cleaning, DAX formula optimization, visual storytelling.',
+    results: 'Insightful dashboards that improved decision-making by 30%.',
+    githubUrl: '#',
+    liveUrl: '#',
+    viewProjects: [
+      { name: 'Sales Dashboard', image: 'link-to-your-dashboard.png' },
+      { name: 'Time Series Forecasting', image: 'link-to-your-forecasting.png' }
+    ]
+  }
+];
 
+ 
   const handleViewMore = (project: any) => {
     setSelectedProject(project);
   };
