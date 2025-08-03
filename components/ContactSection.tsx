@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
@@ -41,11 +40,30 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      alert('Thank you for your message! I will get back to you soon.');
-      setFormData({ name: '', email: '', message: '' });
+    try {
+      const response = await fetch('https://formspree.io/f/mpwljory', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('✅ Thank you for your message! I will get back to you soon.');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('❌ There was an issue submitting the form. Please try again later.');
+      }
+    } catch (error) {
+      alert('❌ Something went wrong. Please check your internet connection or try again later.');
+      console.error(error);
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
