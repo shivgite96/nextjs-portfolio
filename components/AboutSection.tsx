@@ -25,13 +25,27 @@ export default function AboutSection() {
   }, []);
 
   const skills = [
-    { icon: 'ri-code-line', name: 'Python', description: 'Data analysis & automation' },
-    { icon: 'ri-database-2-line', name: 'MySQL', description: 'Database management' },
-    { icon: 'ri-function-line', name: 'MATLAB', description: 'Engineering simulations' },
-    { icon: 'ri-pencil-ruler-2-line', name: 'AutoCAD', description: '2D technical drawings' },
-    { icon: 'ri-cube-line', name: 'SolidWorks', description: '3D modeling & design' },
-    { icon: 'ri-team-line', name: 'Teamcenter', description: 'PLM solutions' }
-  ];
+  // 🧠 Data & Analytics
+  { icon: 'ri-code-line', name: 'Python', description: 'Data analysis & automation' },
+  { icon: 'ri-database-2-line', name: 'MySQL', description: 'Database management' },
+  { icon: 'ri-bar-chart-box-line', name: 'Power BI', description: 'Interactive dashboards & analytics' },
+  { icon: 'ri-pie-chart-2-line', name: 'Tableau', description: 'Data visualization & storytelling' },
+  { icon: 'ri-file-excel-2-line', name: 'Excel', description: 'Tabular data analysis & visualization' },
+
+  // 🛠️ Design & CAD
+  { icon: 'ri-pencil-ruler-2-line', name: 'AutoCAD', description: '2D technical drawings' },
+  { icon: 'ri-cube-line', name: 'SolidWorks', description: '3D modeling & design' },
+  { icon: 'ri-settings-2-line', name: 'ANSYS', description: 'FEA & CFD simulations' },
+  { icon: 'ri-shapes-line', name: 'Fusion 360', description: '3D CAD/CAM tool for engineering design' },
+  { icon: 'ri-brush-line', name: 'OpenSCAD', description: 'Programmatic 3D modeling' },
+
+  // ⚙️ Other Technical Skills
+  { icon: 'ri-function-line', name: 'MATLAB', description: 'Engineering simulations' },
+  { icon: 'ri-3d-line', name: '3D Printing', description: 'Prototyping & fabrication skills' },
+  { icon: 'ri-team-line', name: 'Teamcenter', description: 'PLM solutions' },
+  { icon: 'ri-github-line', name: 'GitHub', description: 'Version control & collaboration' }
+];
+
 
   return (
     <section ref={sectionRef} id="about" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
