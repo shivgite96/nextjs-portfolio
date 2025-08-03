@@ -184,16 +184,18 @@ export default function ResumeSection() {
               </div>
 
               <div className="text-center">
-                <button
-                  onClick={handleDownloadResume}
-                  className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg 
-                           transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer
-                           flex items-center mx-auto space-x-3"
-                >
-                  <i className="ri-download-line text-xl"></i>
-                  <span>Download Full Resume</span>
-                </button>
-              </div>
+  <a
+    href="/resume.pdf"
+    download
+    className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg 
+             transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer
+             flex items-center mx-auto space-x-3"
+  >
+    <i className="ri-download-line text-xl"></i>
+    <span>Download Full Resume</span>
+  </a>
+</div>
+
             </div>
           </div>
         </div>
