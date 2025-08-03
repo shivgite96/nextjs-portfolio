@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -55,13 +54,15 @@ export default function HeroSection() {
               >
                 View My Projects
               </button>
-              <button
-                onClick={() => scrollToSection('resume')}
+              
+              <a
+                href="/resume.pdf"
+                download
                 className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-blue-900 
-                         font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer"
+                         font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer text-center"
               >
                 Download Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>
