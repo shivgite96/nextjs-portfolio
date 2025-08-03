@@ -43,7 +43,8 @@ export default function AboutSection() {
   { icon: 'ri-function-line', name: 'MATLAB', description: 'Engineering simulations' },
   { icon: 'ri-3d-line', name: '3D Printing', description: 'Prototyping & fabrication skills' },
   { icon: 'ri-team-line', name: 'Teamcenter', description: 'PLM solutions' },
-  { icon: 'ri-github-line', name: 'GitHub', description: 'Version control & collaboration' }
+  { icon: 'ri-github-line', name: 'GitHub', description: 'Version control & collaboration' },
+  {icon: 'ri-brain-line',name: 'Generative AI',description: 'Prompt engineering & AI-powered tools'}
 ];
 
 
